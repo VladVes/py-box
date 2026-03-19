@@ -1,3 +1,16 @@
+from datetime import datetime
+
+time = datetime.now()
+# Строки и методы строк https://docs.python.org/3/library/stdtypes.html#string-methods
+
+# 11. Как создать многострочную строку не используя \n?
+# Как сделать в ней интерполяцию?
+# Как сделать что бы в конеце не влюкчалась пустая строка?
+a = 'A'
+b = 'B'
+text = f'''{a} и {b}
+    сидели на трубе'''
+
 # 15. Длинна строки
 l = len('some string')
 
@@ -11,6 +24,7 @@ l = len('some string')
 # - в нижнем ли регистре,
 # - в вехнем ли регистре,
 # - все ли символы с большой буквы
+
 s = 'Hexlet'
 
 # - начинается ли с he, 
@@ -31,7 +45,6 @@ sm7 = s.islower()
 sm8 = s.isupper()
 # - все ли символы с большой буквы
 sm9 = s.istitle()
-
 
 # Преобразовать строку 'heXlEt ! ' так что бы начиналась с большой буквы,
 # перевести всё в нижний регистр, 
@@ -54,3 +67,20 @@ s2m5 = s2.replace('xl', 'ze')
 s2m6 = s2*3
 print(s2m6)
 
+data = f'''
+            Hello, Python!
+            The time is {time:%b %d %H:%M:%S}
+            ---------------------------------
+            String Slices Exampl:
+            Source str = 'code-basics'. 
+            Get slice:
+                'sic': {str1}
+                from first to 3 char: {str2}
+                from 4 to last: {str3}
+                'sic' another way: {str4}
+                'oebs': {str5}
+                revese: {str6}
+                'cisab': {str7}
+            ---------------------------------
+            String method Example:
+            Source str = 'Hexlet\''''
