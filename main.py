@@ -1,5 +1,6 @@
 from datetime import datetime
 from str_slices import str1, str2, str3, str4, str5, str6, str7
+from str_methods import *
 
 
 def app(environ, start_response):
