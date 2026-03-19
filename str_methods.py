@@ -1,6 +1,9 @@
 from datetime import datetime
+from str_slices import *
 
-time = datetime.now()
+# 5. Какая есть специальная встроенная функция для вывода символа по переданному ей ASCII коду?
+chr(126)
+
 # Строки и методы строк https://docs.python.org/3/library/stdtypes.html#string-methods
 
 # 11. Как создать многострочную строку не используя \n?
@@ -67,6 +70,7 @@ s2m5 = s2.replace('xl', 'ze')
 s2m6 = s2*3
 print(s2m6)
 
+time = datetime.now()
 data = f'''
             Hello, Python!
             The time is {time:%b %d %H:%M:%S}
@@ -84,3 +88,5 @@ data = f'''
             ---------------------------------
             String method Example:
             Source str = 'Hexlet\''''
+
+
