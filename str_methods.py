@@ -91,3 +91,10 @@ data = f'''
             Source str = 'Hexlet\''''
 
 
+# 9. Дана строка first_name = 'Alexander' 
+# как получить первый символ строки? Как получить последний символ и второй символ с конца строки?
+
+s = 'Alexander'
+print(s[0]) # A
+print(s[-1]) # r
+print(s[-2]) # e
