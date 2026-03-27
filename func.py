@@ -51,3 +51,28 @@ def is_good_apartment(sqr: int, street: str) -> bool:
     return (sqr >= 100) or (sqr >= 80 and street == 'Main Street')
 def is_not_good_apartment(sqr: int, street: str) -> bool:
     return not((sqr >= 100) or (sqr >= 80 and street == 'Main Street'))
+
+# 33. Реализуйте функцию is_palindrome(), которая определяет, является ли слово палиндромом или нет.
+# Палиндром - это слово, которое читается одинаково в обоих направлениях.
+# Слова в функцию могут быть переданы в любом регистре. Сделать варриант функции is_not_palindrome(),
+# которая проверяет что слово НЕ является палиндромом (может использовать is_palindrom)
+
+def is_palindrome(word: str) -> bool:
+    return word.lower() == word.lower()[::-1]
+
+def is_not_palindrome(word: str) -> bool:
+    return not is_palindrome(word)
+
+print(f'is Palindorme "wow": ', is_palindrome('wow'))
+print(f'is Palindorme "God": ', is_palindrome('God'))
+
+print(f'is NOT Palindorme "myau": ', is_not_palindrome('myau'))
+print(f'is NOT Palindorme "matam": ', is_not_palindrome('matam'))
+
+# 35. Написать функцию получающую целое число и возвращающую строку even если число чётное и odd если не чётное.
+# Тело должно быть в одну строку с помощью только логических выражений
+def even_odd(num: int) -> str:
+    return num % 2 == 0 and 'even' or 'odd'
+print(f'is even or odd 5: ', even_odd(5))
+print(f'is even or odd 8: ', even_odd(8))
+
