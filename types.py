@@ -18,3 +18,7 @@ def test2(flag: bool) -> None:
     print(f'Is it work\'s witho no return? {flag}')
 test1('snake', 5)
 test2(True)
+
+# 36. Как проверить соответствует ли тип данных переменной заданному?
+isinstance(3, str) #false
+isinstance('hi python', str) #true
