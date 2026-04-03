@@ -12,3 +12,15 @@ def count_chars(s: str, c: str) -> int:
     return result 
 
 print(count_chars('hello', 'l'))
+
+# 42. Как в Python выглядит базовая конструкция цикла без условия остановки?
+# Какой это цикл? Сделать с его помощью переворот строки
+
+def str_reverse(string: str) -> str:
+    result = ''
+    for char in string:
+        result = char + result
+    
+    return result
+
+print(str_reverse("hello"))
