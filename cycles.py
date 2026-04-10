@@ -75,3 +75,19 @@ def fizzbuzz(n: int) -> str:
 
 print(fizzbuzz(16))
         
+# 44. Реализуйте функцию count_vowels(), которая принимает строку и возвращает
+# количество гласных английского алфавита (a, e, i, o, u, y) в строке.
+# Одни из варианто реализации это создать строку со всеми гласными vowels = ''
+# и проверять содержит ли она проверяемый символ.
+# Какую удобную конструкцию для проверки наличия символа в строке гласных можно
+# использовать не прибегая к методам str?
+
+def count_vowels(string: str) -> int:
+    result = 0
+    vowels = 'aeiouy'
+    for char in string:
+        if char.lower() in vowels:
+            result += 1
+    return result
+
+print("Counting vouwels in 'Hello Python' string: ", count_vowels('Hello Python!'))

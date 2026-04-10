@@ -34,7 +34,7 @@ make_line(char='*')
 # (с плав точкой) и возвращает строку имя: <имя> возраст: <возраст> лет, рост: <рост>. 
 # Сделать рост параметром по умлочанию со занчением 175.5
 
-def print_user_data(name: str, age: int, stature=175.5) -> str:
+def print_user_data(name: str, age: int, stature: float = 175.5) -> str:
     print(f'Имя: {name}\nВозраст: {age}\nРост: {stature}\n')
 
 print_user_data('John', 55, '180.5')
