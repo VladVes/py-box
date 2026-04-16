@@ -9,6 +9,8 @@ import sp.constants
 from sp.functions import run
 from sp.constants import DEFAULT_URL
 
+from drill.fn import count_vowels
+
 hi = greet.say_hi("Ivan")
 print(hi)
 print(greet.text)
@@ -24,3 +26,6 @@ sp.functions.run()
 print(sp.constants.DEFAULT_URL)
 run()
 print(DEFAULT_URL)
+
+# --------------
+print(count_vowels("Hello packages"))
