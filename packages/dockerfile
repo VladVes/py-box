@@ -1,0 +1,10 @@
+#Dockerfile
+FROM demisto/python3:3.12.14
+
+WORKDIR /drill_app
+
+ENV MESSAGE hello from drill
+
+COPY . . 
+
+CMD [python3 main.py]
