@@ -1,9 +1,5 @@
-print('Drill!')
+def demo():
+    for n in range(0, 5, 2):
+        print(n)
 
-def str_reverse(string: str) -> str:
-    result = ''
-    for ch in string:
-        result = ch + result
-    return result
-
-print(str_reverse('super'))
+demo()
