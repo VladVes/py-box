@@ -22,3 +22,7 @@ test2(True)
 # 36. Как проверить соответствует ли тип данных переменной заданному?
 isinstance(3, str) #false
 isinstance('hi python', str) #true
+isinstance(43.21231, float)
+print(isinstance(43.21231, (float, int)))
+isinstance(43.21231, float)
+print(isinstance(None, str))
