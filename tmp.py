@@ -1,6 +1,10 @@
-def get_type_of_sentence(sentence: str) -> str:
-    return "question" if sentence.endswith("?") else "normal"
+VOWELS = "aeiouy"
+def count_vowels(word: str) -> int:
+    counter = 0
+    for ch in word:
+        if ch in VOWELS:
+            counter += 1
+    return counter
+            
 
-print(get_type_of_sentence("Hello!"))
-print(get_type_of_sentence("How are you?"))
-
+print(count_vowels("Hello"))
